@@ -5,4 +5,3 @@ export default (connection, Sequelize, Manufacturers) => connection.define('prod
   yearIntroduced: { type: Sequelize.DATEONLY },
   manufacturerId: { type: Sequelize.INTEGER, references: { model: Manufacturers, key: 'id' } },
 }, { paranoid: true })
-

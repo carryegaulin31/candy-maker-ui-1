@@ -26,6 +26,7 @@
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-watch": "^7.0.0",
     "chai": "^4.2.0",
