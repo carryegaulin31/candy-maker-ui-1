@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import Sequelize from 'sequelize'
-import allConfigs from '../configs/sequelize'
+import allConfigs from '../config/sequelize'
 import ManufacturersModel from './manufacturers'
 import ProductsModel from './products'
 
