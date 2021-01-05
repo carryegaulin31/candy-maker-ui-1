@@ -24,11 +24,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
-    "babel-watch": "^7.0.0",
+    "babel-watch": "^7.1.0",
     "chai": "^4.2.0",
     "concurrently": "^5.2.0",
     "env-cmd": "^10.1.0",
