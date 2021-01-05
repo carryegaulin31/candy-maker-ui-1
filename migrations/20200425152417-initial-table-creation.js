@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-
     await queryInterface.createTable('manufacturers', {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
       name: { type: Sequelize.STRING, allowNull: false },
@@ -29,7 +28,6 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-
     await queryInterface.dropTable('products')
 
     return queryInterface.dropTable('manufacturers')

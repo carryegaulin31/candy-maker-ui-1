@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 module.exports = {
   up: async (queryInterface) => {
-
     await queryInterface.bulkInsert('manufacturers', [
       { name: 'August Storck KG', country: 'DE' },
       { name: 'Cadbury', country: 'UK' },
@@ -95,7 +94,6 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-
     await queryInterface.bulkDelete('products')
 
     return queryInterface.bulkDelete('manufacturers')
