@@ -4,6 +4,11 @@
   width: 60%;
 }
 
+.manufacturer {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .title {
   font-size: 24px;
   font-weight: 600;
