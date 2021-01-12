@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ManufacturerDetails from '../components/ManufacturerDetails'
 import Page from '../components/Page'
 import Title from '../components/Title'
 import { retrieveCandies } from '../utils/candies'
@@ -25,7 +26,7 @@ export default ({ location }) => {
       <Title />
       {
         maunfacturerName
-          ? (<div>{manufacturerList.name}</div>)
+          ? (<ManufacturerDetails name={manufacturer.name} country={manufacturer.country} />)
           : (<div>Sorry, I do not know that manufacturer</div>)
       }
     </Page>
