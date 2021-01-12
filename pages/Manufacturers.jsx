@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Search from '../components/Search'
 import Manufacturer from '../components/Manufacturer'
+import Title from '..components/Title'
 import { filterManufacturers, retrieveManufacturers } from '../utils/manufacturers'
 
 export default () => {
@@ -24,8 +25,7 @@ export default () => {
   }, [searchTerm])
   return (
     <div className="page">
-      <div className="title">Candy Makers</div>
-      <div className="subtitle">A searchable list of all your favorite manufacturers of candies</div>
+      <Title />
       <Search term={searchTerm} setter={setSearchTerm} />
       {
         // eslint-disable-next-line max-len
