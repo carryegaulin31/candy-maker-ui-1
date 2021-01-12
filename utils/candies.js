@@ -1,4 +1,4 @@
-import fetchCandiesForManufacturer from '../actions/candies'
+import fetchCandiesForManufacturer from '../actions/products'
 
 export const getManufacturerNameFromUrl = location => (location &&
   location.pathname

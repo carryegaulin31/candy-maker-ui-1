@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import ErrorPage from './pages/Error'
-import CandiesPage from './pages/Candies'
+import CandiesPage from './pages/Products'
 import ManufacturersPage from './pages/Manufacturers'
 
 render(
