@@ -23,6 +23,11 @@ export default ({ location }) => {
   return (
     <Page>
       <Title />
-    </Page >
+      {
+        maunfacturerName
+          ? (<div>{manufacturerList.name}</div>)
+          : (<div>Sorry, I do not know that manufacturer</div>)
+      }
+    </Page>
   )
 }
