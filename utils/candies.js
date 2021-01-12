@@ -8,4 +8,8 @@ export const retrieveCandies = async (locations) => {
   const manufacturerName = getManufacturerNameFromUrl(location)
 
   if (!manufacturerName) return { details: {}, candies: [] }
+
+  const { id, name, country, candies } = await
+  fetchCandiesForManufacturer(manufacturerName)
+  
 }
