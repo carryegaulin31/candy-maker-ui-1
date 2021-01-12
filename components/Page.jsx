@@ -7,5 +7,5 @@ const Page = styled.div`
   width: 60%;
   `
 export default ({ children }) => (
-  <div className="page">{children}</div>
+  <Page>{children}</Page>
 )

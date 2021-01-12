@@ -9,5 +9,5 @@ const Input = styled.input`
   outline: none;
 `
 export default ({ term, setter }) => (
-  <input type="text" name="search" value={term} onChange={event => setter(event.target.value)} />
+  <Input type="text" name="search" value={term} onChange={event => setter(event.target.value)} />
 )
