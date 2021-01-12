@@ -8,7 +8,7 @@ text-align: center;
 `
 
 export default ({ id, name, yearIntroduced, manufacturerId }) => (
-  <Hero key={id}>
+  <Product key={id}>
     {`${name} (${yearIntroduced}) (${manufacturerId})`}
-  </Hero>
+  </Product>
 )

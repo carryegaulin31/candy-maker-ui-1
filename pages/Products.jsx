@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Product from '../components/Product'
+import NotFound from '../components/NotFound'
 import Page from '../components/Page'
 import ManufacturerDetails from '../components/ManufacturerDetails'
 import Title from '../components/Title'
@@ -8,15 +9,15 @@ import { retrieveProducts } from '../utils/products'
 
 export default ({ location }) => {
   const [maunfacturerName, setManufacturerName] = useState('')
-  const [manufacturerList, setManufacturerList] = useState({})
+  const [manufacturer, setManufacturer] = useState({})
   const [productList, setProductList] = useState([])
 
   useEffect(() => {
     async function pullData() {
       const { details, products } = await retrieveProducts(location)
 
-      setManufacturerList(details.name)
-      setFilteredManufacturerList(details)
+      setManufacturerName(details.name)
+      setManufacturer(details)
       setProductList(products)
     }
     pullData()
@@ -41,7 +42,7 @@ export default ({ location }) => {
               ))}
             </>
           )
-          : (<div>Sorry, I do not know that product</div>)
+          : (<NotFound message="Sorry, I do not know that product" />)
       }
     </Page>
   )
