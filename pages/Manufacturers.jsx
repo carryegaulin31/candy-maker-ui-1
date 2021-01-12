@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Manufacturer from '../components/Manufacturer'
 import Search from '../components/Search'
+import Manufacturer from '../components/Manufacturer'
 import { filterManufacturers, retrieveManufacturers } from '../utils/manufacturers'
 
 export default () => {
@@ -10,6 +10,7 @@ export default () => {
   useEffect(() => {
     async function pullData() {
       const manufacturers = await retrieveManufacturers()
+
       setManufacturerList(manufacturers)
       setFilteredManufacturerList(manufacturers)
     }
@@ -18,6 +19,7 @@ export default () => {
 
   useEffect(() => {
     const filtered = filterManufacturers(manufacturerList, searchTerm)
+
     setFilteredManufacturerList(filtered)
   }, [searchTerm])
   return (
