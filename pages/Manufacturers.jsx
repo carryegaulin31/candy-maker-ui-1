@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Page from '../components/Page'
 import Search from '../components/Search'
 import Manufacturer from '../components/Manufacturer'
 import Title from '../components/Title'
@@ -24,13 +25,13 @@ export default () => {
     setFilteredManufacturerList(filtered)
   }, [searchTerm])
   return (
-    <div className="page">
+    <Page>
       <Title />
       <Search term={searchTerm} setter={setSearchTerm} />
       {
         // eslint-disable-next-line max-len
         filteredManufacturerList.map(manufacturer => (<Manufacturer key={manufacturer.id} id={manufacturer.id} name={manufacturer.name} country={manufacturer.country} />))
       }
-    </div>
+    </Page>
   )
 }
