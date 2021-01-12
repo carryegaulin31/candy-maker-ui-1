@@ -9,6 +9,7 @@ import ManufacturersPage from './pages/Manufacturers'
 render(
   <BrowserRouter>
     <Switch>
+      <Route path="/products" component={ProductsPage} />
       <Route exact path="/" component={ManufacturersPage} />
       <Route path="*" component={ErrorPage} />
     </Switch>
