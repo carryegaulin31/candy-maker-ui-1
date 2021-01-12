@@ -5,5 +5,6 @@ export const filterManufacturers = (list, term) => list.filter(manufacturer => m
 
 export const retrieveManufacturers = async () => {
   const manufacturers = await fetchManufacturers()
+
   return manufacturers
 }

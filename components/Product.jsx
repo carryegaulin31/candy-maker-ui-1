@@ -7,8 +7,8 @@ margin: 10px 0;
 text-align: center;
 `
 
-export default ({ id, name, yearIntroduced, manufacturerId }) => (
+export default ({ id, name, yearIntroduced }) => (
   <Product key={id}>
-    {`${name} (${yearIntroduced}) (${manufacturerId})`}
+    {`${name} (${yearIntroduced})`}
   </Product>
 )

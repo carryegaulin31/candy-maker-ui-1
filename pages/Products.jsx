@@ -38,7 +38,6 @@ export default ({ location }) => {
                   id={product.id}
                   name={product.name}
                   yearIntroduced={product.yearIntroduced}
-                  manufacturerId={product.manufacturerId}
                 />
               ))}
             </>
