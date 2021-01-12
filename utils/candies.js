@@ -6,4 +6,6 @@ export const getManufacturerNameFromUrl = location => (location &&
 
 export const retrieveCandies = async (locations) => {
   const manufacturerName = getManufacturerNameFromUrl(location)
+
+  if (!manufacturerName) return { details: {}, candies: [] }
 }
