@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Page from '../components/Page'
 import Title from '../components/Title'
+import { retrieveCandies } from '../utils/candies'
 
 export default ({ location }) => {
   const [maunfacturerName, setManufacturerName] = useState('')
