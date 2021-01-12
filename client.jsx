@@ -1,10 +1,13 @@
-/* eslint-disable linebreak-style */
 import React from 'react'
 import { render } from 'react-dom'
-import Manufacturers from './components/Manufacturers'
-// eslint-disable-next-line linebreak-style
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ManufacturersPage from './pages/Manufacturers'
 
 render(
-  <Manufacturers />,
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={ManufacturersPage} />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root'),
 )

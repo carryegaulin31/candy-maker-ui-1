@@ -1,3 +1,4 @@
 # Ignore webpack config
 webpack.dev.js
 public
+bundle.js

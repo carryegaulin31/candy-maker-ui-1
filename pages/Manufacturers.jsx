@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import Manufacturer from './Manufacturer'
-import Search from './Search'
+import Manufacturer from '../components/Manufacturer'
+import Search from '../components/Search'
 import { filterManufacturers, retrieveManufacturers } from '../utils/manufacturers'
 
 export default () => {
