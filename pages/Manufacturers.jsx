@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Search from '../components/Search'
 import Manufacturer from '../components/Manufacturer'
-import Title from '..components/Title'
+import Title from '../components/Title'
 import { filterManufacturers, retrieveManufacturers } from '../utils/manufacturers'
 
 export default () => {
