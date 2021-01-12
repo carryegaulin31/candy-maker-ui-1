@@ -7,7 +7,6 @@ import ManufacturerDetails from '../components/ManufacturerDetails'
 import Title from '../components/Title'
 import { retrieveProducts } from '../utils/products'
 
-
 export default ({ location }) => {
   const [maunfacturerName, setManufacturerName] = useState('')
   const [manufacturer, setManufacturer] = useState({})
@@ -33,7 +32,7 @@ export default ({ location }) => {
           ? (
             <>
               <ManufacturerDetails name={manufacturer.name} country={manufacturer.country} />
-              {productList.map(hero => (
+              {productList.map(product => (
                 <Product
                   key={product.id}
                   id={product.id}
