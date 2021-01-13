@@ -12,6 +12,6 @@ const Link = styled(NavLink)`
 
 export default ({ id, name, country }) => (
   <Team key={id}>
-    <Link to={`/manufacturers/${name}`}>{`${name} (${country})`}</Link>
+    <Link to={`/products/${id}`}>{`${name} (${country})`}</Link>
   </Team>
 )
