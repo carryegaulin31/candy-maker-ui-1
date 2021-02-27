@@ -11,6 +11,7 @@ app.use(express.static('public'))
 
 app.get('/api/manufacturers', getAllManufacturers)
 app.get('/api/manufacturers/:id', getManufacturerById)
+
 app.get('/api/products', getAllProducts)
 app.get('/api/products/:id', getProductsById)
 // app.post('/api/products', bodyParser.json(), saveNewCandy)
